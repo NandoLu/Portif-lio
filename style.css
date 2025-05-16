@@ -1,0 +1,180 @@
+/* Foratacao do body */
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilos para as sessões da pagina */
+.secao{
+    padding: 60px 20px;
+
+}
+/* Estilos para o cabecalho */
+.cabecalho{
+    background-color: #333;
+    color: #fff;
+    padding: 15px 20px;
+    /* Utilizando o flex box para alinhar os itens do cabecalho */
+    display: flex; /* A ativa o modelo de layout do flexbox para o container */
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+/* Container interno do cabecalho para poder limitar a largura do conteudo  */
+.cabecalho-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%; 
+}
+/* estilos para o nome do cabecalho  */
+.nome-portifolio{
+    margin: 0;
+    font-size: 1.5em;
+}
+/* Estilos para a navegacao */
+.navegacao ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.navegacao li{
+    margin-left: 20px;
+}
+.navegacao a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 300ms;
+}
+.navegacao a:hover{
+    color: #9e9e9e;
+}
+/* Estilos para a seção "sobre mim" */
+.sobre-container{
+    max-width: 1200px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.foto-perfil{
+    width: 200px;
+    border-radius: 50%;
+}
+.texto-sobre h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilos para a secao de habilidades */
+.habilidades{
+    background-color: #d7d7d7;
+}
+.habilidades-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.lista-habilidades{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebra de linha */
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+.lista-habilidades li{
+    background-color: #ffffff;
+    color: #333;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+/* Estilos para a secao projeto */
+.projetos-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    /* Utilizando o CSS grid para criar um layout de grade para os projetos */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); /*Cria colunas que se ajustam automaticamente 
+                                                                com uma largura mínima de 200px e máxima de 1 frame disponível*/    
+    gap: 20px;
+}
+.projeto{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+}
+.projeto img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.projeto h3{
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.projeto a{
+    display: inline-block; /* Permite definir padding e margin */
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 500ms;
+}
+.projeto a:hover{
+    background-color: #555;
+}
+/* Estilos da secao contato */
+.contato{
+    background-color: #b9b9b9;
+}
+.contato-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.formulario-contato{
+    margin-top: 20px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column; /* Organiza os elementos horizontalmente*/
+    gap: 10px;
+}
+.formulario-contato input [type="text"],
+.formulario-contato input [type="email"],
+.formulario-contato textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.formulario-contato textarea{
+    resize: vertical; /* Permite redimencionar a altura do textarea */
+    min-height: 100px;
+}
+.formulario-contato button[type="submit"]{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+}
